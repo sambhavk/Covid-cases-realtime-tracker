@@ -1,0 +1,27 @@
+<div class="container">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <h1>Coronavirus Tracker Application</h1>
+    <p>This application lists the total number of cases reported across the globe</p>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <h1 class="display-4" th:text="${totalCasesReported}">0</h1>
+        <p class="lead">Total cases reported as of Today</p>
+    </div>
+
+    <table class="table table-striped">
+        <tr>
+            <th>State</th>
+            <th>Country</th>
+            <th>Total Covid cases reported</th>
+            <th>Changes since last day</th>
+        </tr>
+        <tr th:each="attr : ${allStats}">
+            <td th:text="${attr.state}"></td>
+            <td th:text="${attr.country}"></td>
+            <td th:text="${attr.latestTotalCases}">0</td>
+            <td th:text="${attr.diff}">0</td>
+        </tr>
+    </table>
+</div>
