@@ -1,7 +1,14 @@
 # Covid-cases-realtime-tracker
-This application lists the total number of covid cases reported across the globe updating the count on daily basis.
+A Java Spring Boot application from scratch to track reported data of confirmed Coronavirus infections COVID-19 (2019-nCoV) around the world.
 
-Built with spring boot, Thymeleaf, bootstrap and docker.
+Tools and technologies used:
+- Java 15
+- Spring Boot
+- Spring MVC
+- Thymeleaf
+
+Data source used: Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE -
+https://github.com/CSSEGISandData/COVID-19
 
 You can pull docker image from here: https://hub.docker.com/repository/docker/godkill9/docker-spring-boot
 
